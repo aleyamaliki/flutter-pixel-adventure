@@ -3,7 +3,7 @@ import 'dart:ui';
 
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
-import 'package:pixel_adventure/levels.dart/level.dart';
+import 'package:pixel_adventure/levels/level.dart';
 
 class PixelAdventure extends FlameGame {
   @override
@@ -12,7 +12,9 @@ class PixelAdventure extends FlameGame {
   final world = Level();
   
   @override
-  FutureOr<void> onLoad() {
+  FutureOr<void> onLoad() async {
+    // load all images to the caches
+    await images.loadAllImages();
     cam = CameraComponent.withFixedResolution(world: world, width: 640, height: 360);
     cam.viewfinder.anchor = Anchor.topLeft;
     addAll([cam, world]);
