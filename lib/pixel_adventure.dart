@@ -9,7 +9,9 @@ class PixelAdventure extends FlameGame {
   @override
   Color backgroundColor() => const Color(0xFF211F30);
   late final CameraComponent cam;
-  final world = Level();
+  final world = Level(
+    levelName: 'Level-02'
+  );
   
   @override
   FutureOr<void> onLoad() async {
