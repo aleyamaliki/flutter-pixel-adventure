@@ -29,7 +29,7 @@
 </data>
  </layer>
  <objectgroup id="3" name="Spawnpoints">
-  <object id="1" name="Player" type="Player" x="80.6667" y="240" width="32" height="30.6667"/>
+  <object id="1" name="Player" type="Player" x="354.667" y="240" width="32" height="30.6667"/>
   <object id="2" x="250.667" y="-29.3333" width="0.666667"/>
   <object id="3" x="40" y="-64.6667" width="0.666667" height="1.33333"/>
  </objectgroup>
